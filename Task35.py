@@ -1,8 +1,10 @@
 #Написать программу получающую набор произведений чисел от 1 до N.
 def set_multiplication(n):
     result = 1
+    lst = []
     for i in range(1,n+1):
         result *= i
-        print(result)
+        lst.append(result)
+    return lst
 n = int(input('Введите число: '))
-set_multiplication(n)
+print(set_multiplication(n))
